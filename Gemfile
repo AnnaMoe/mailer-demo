@@ -33,6 +33,10 @@ gem 'devise'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
+
+#this gem only bundle installed in development environment - as it is for testing sending emails
+gem 'letter_opener', group: :development
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
